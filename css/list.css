@@ -125,6 +125,10 @@ body {
   }
 }
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 41px 35px ;
+  margin-top: 21px;
   --badgeText: #676767;
   --badgeBg: #fcfbfb;
   --text: #3c2e30;
@@ -184,4 +188,81 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sky{
+  --title:#000;
+  --title2:#AD8A70;
+}
+  .sky-title1 {
+    padding-top: 26px;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .sky-title2 {
+    color: #AD8A70;
+    font-size: 16px;
+    padding-bottom: 35px;
+    padding-top: 14px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .sky-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .sky-list__date{
+    padding-top: 28px;
+    width: 315px;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  } 
+.sky-list__title{
+  padding-top: 19px;;
+  width: 315px;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 19px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sky-list__text{
+  padding-top: 7px;
+  width: 314.815px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #847A74;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.sky-list__2 {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.sky-list__view {
+  padding-top: 56px;
+  width: 100px;
+  color: #B5967E;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
