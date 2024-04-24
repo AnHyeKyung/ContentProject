@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>온라인서식의 제목</legend>
+        <ul>
+          <li><input type="text" /> 한줄 글상자</li>
+          <li><input type="password" /> 비밀번호 입력</li>
+          <li><input type="file" /> 첨부파일</li>
+          <li><input type="checkbox" />선택1 <input type="checkbox" />선택2 <input type="checkbox" />선택3</li>
+          <li><input type="radio" name="radiogroup" /> 선택1 <input type="radio" />선택2 <input type="radio" />선택3 <input type="radio" />선택4</li>
+          <li><input type="url" /> 도메인주소 입력</li>
+          <li><input type="email" /> 이메일 입력</li>
+          <li><input type="number" /> 숫자입력</li>
+          <li><input type="tel" /> 전화번호입력</li>
+          <li><input type="search" /> 검색어 입력</li>
+          <li><input type="date" /> 월별 선택</li>
+          <li>
+            <select>
+              <option>선택하세요1</option>
+              <option>선택하세요2</option>
+              <option>선택하세요3</option>
+            </select>
+          </li>
+          <li>
+            <textarea>여러줄글상자</textarea>
+          </li>
+          <li><button type="reset">초기화</button></li>
+          <li><button type="submit">전송</button></li>
+          <li><button>범용</button></li>
+          <li><button type="button">범용</button></li>
+        </ul>
+      </fieldset>
+    </form>
+    <br /><br /><br /><br />
+    <h2>폼4</h2>
+    <form action="">
+      <fieldset>
+        <legend>상세검색</legend>
+        <table class="search">
+          <colgroup>
+            <col style="width: 88px" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>채용구분</th>
+              <td>
+                <ul class="check-list">
+                  <li><input type="checkbox" />전체</li>
+                  <li><input type="checkbox" />신입</li>
+                  <li><input type="checkbox" />경력</li>
+                  <li><input type="checkbox" />Foreigner</li>
+                  <li><input type="checkbox" />계약</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>직군구분</th>
+              <td>
+                <ul class="check-list">
+                  <li><input type="checkbox" />전체</li>
+                  <li><input type="checkbox" />Engineering</li>
+                  <li><input type="checkbox" />Design</li>
+                  <li><input type="checkbox" />Business</li>
+                  <li><input type="checkbox" />Staff</li>
+                  <li><input type="checkbox" />기타</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+    <input type="search" />
+    <button type="submit">찾기</button>
+  </body>
+</html>
