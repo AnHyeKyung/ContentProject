@@ -1,6 +1,16 @@
 body {
   padding: 20px;
 }
+.form {
+  input {
+    button,
+    select,
+    textarea,
+    input {
+      border: 1px solid #cecece;
+    }
+  }
+}
 .search {
   --line: #cecece;
   --black: #000;
@@ -45,4 +55,115 @@ td {
 td .check-list {
   display: flex;
   gap: 30px;
+}
+.search__word {
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 85px;
+  gap: 10px;
+  margin-top: 10px;
+  input {
+    height: 40px;
+    table {
+      border: 1px solid var(--line);
+    }
+    button {
+      background-color: var(--btnBg);
+      color: #fff;
+      font-size: 16px;
+      transition: 0.5s;
+      &:hover {
+        color: var(--btnBg);
+        background-color: var(--white);
+      }
+    }
+  }
+}
+.check-type1 {
+  display: none;
+  + label {
+    padding-left: 18px;
+    background: url(../images/bg_chcek_off.svg) no-repeat left;
+  }
+  &:checked {
+    + label {
+      background: url(../images/bg_check_on.svg) no-repeat left;
+    }
+  }
+}
+.search2 {
+  --text: #555;
+  --textBtn: #070707;
+  --bg: #f7f7f7;
+  --border: #e5e5e5;
+  --btn: #7d7d7d;
+
+  th {
+    width: 120px;
+    background: var(--bg);
+    font-style: normal;
+  }
+}
+
+.grid2 {
+  border-bottom: 1px solid var(--border);
+  li {
+    margin: 14px;
+  }
+  td {
+    display: flex;
+    /*gap: 30px;*/
+  }
+  tr {
+    border-top: 1px solid var(--border);
+  }
+  th {
+    font-weight: 400;
+  }
+}
+.flex {
+  display: flex;
+}
+.button2 {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn1 {
+  width: 107px;
+  height: 34px;
+  background: #7d7d7d;
+  color: #fff;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn2 {
+  width: 62px;
+  height: 34px;
+  margin-left: 10px;
+  border: 1px solid #7d7d7d;
+  background: #fff;
+}
+.check-type2 {
+  display: none;
+  + label {
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-right: 10px;
+    background: url(../images/1.check_off.svg) no-repeat left;
+  }
+  &:checked {
+    + label {
+      background: url(../images/1.check_on.svg) no-repeat left;
+    }
+  }
+}
+td .check-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  /*gap: 30px;*/
 }
