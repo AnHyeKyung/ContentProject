@@ -1,0 +1,18 @@
+.faq-board th,
+.faq-board td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+.faq-board [colspan] {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.faq-board tr.--active {
+  td {
+    display: table-cell;
+  }
+}
+body {
+  padding: 20px;
+}
