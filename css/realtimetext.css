@@ -9,10 +9,20 @@
   height: 250px;
   grid-row: 1 /3; /*grid-row 시작 라인번호  / 끝 라인번호 ; */
 }
+.preview__title {
+  border: 3px dashed greenyellow;
+}
+.preview__link {
+  border: 3px dashed slateblue;
+}
+input {
+  border: 2px solid sienna;
+}
 .preview__content {
   border: 3px dashed tomato;
   grid-column: 2 / 4;
 }
+
 .skeleton {
   background-color: gray;
   position: relative;

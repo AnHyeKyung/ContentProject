@@ -6,15 +6,17 @@
     <title>실시간으로 입력되는 텍스트</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/realtimetext.css" />
-    <script src="../js/realtimetext.js" defer></script>
+    <script src="../js/realtimeModule.js" defer></script>
   </head>
   <body>
     <div class="preview-area">
       <div class="preview__photo skeleton"></div>
-      <div class="preview__title skeleton"></div>
-      <div class="preview__link skeleton"></div>
+      <div class="preview__title"></div>
+      <div class="preview__link"></div>
       <div class="preview__content"></div>
     </div>
     <input type="text" class="input" placeholder="미리보기 내용을 넣어주세요." />
+    <input type="text" class="title" placeholder="제목을 넣어주세요." />
+    <input type="text" class="link" placeholder="링크 텍스트를 넣어주세요." />
   </body>
 </html>

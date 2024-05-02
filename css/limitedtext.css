@@ -1,0 +1,27 @@
+body {
+  padding: 30px;
+}
+.board-write {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  font-size: 20px;
+  > div {
+    padding: 5px;
+    &:nth-child(odd) {
+      background: gainsboro;
+    }
+    &:nth-child(even) {
+      border: 3px solid gainsboro;
+    }
+  }
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid gray;
+  }
+  textarea {
+    height: 100px;
+  }
+}

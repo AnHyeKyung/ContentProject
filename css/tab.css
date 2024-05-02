@@ -1,0 +1,30 @@
+body {
+  padding: 20px;
+}
+.tab {
+  display: flex;
+  li {
+    flex: 1;
+  }
+  button {
+    padding: 5px 10px;
+    width: 100%;
+    .--active & {
+      color: white;
+      background-color: seagreen;
+    }
+  }
+}
+.tab-content {
+  > div {
+    display: none;
+    margin-top: 10px;
+    &.--active {
+      display: block;
+      background: slategray;
+      line-height: 30vh;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
