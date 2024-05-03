@@ -1,0 +1,55 @@
+body {
+  height: 100vh;
+  background-color: silver;
+}
+.btn-menu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.btn-close {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  margin: 10px;
+}
+.mobile {
+  position: fixed;
+  z-index: 10;
+  left: 100%;
+  top: 0;
+  height: 100vh;
+  width: 40vw;
+  text-align: right;
+  background-color: black;
+  transition: 0.5s;
+  &.--active {
+    left: calc(100% - 40vw);
+  }
+  ul {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+  }
+  a {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+}
+
+button {
+  background: none;
+}
